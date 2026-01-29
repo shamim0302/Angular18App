@@ -1,0 +1,9 @@
+<h1>My First Angular App</h1>
+<p>Enjoy building your Angular application.</p>
+<label>Welcome to {{ title }}!</label>
+<br> <br>
+<label>UserName </label>
+<input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+<button (click)="onButtonClick()">Search</button>
+<br><br>
+<p *ngIf="userName && userName.trim() !== ''" >Your name is: {{ userName }}</p>
